@@ -1,0 +1,858 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('theme');
+      var theme = stored || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {}
+  })();
+</script>
+<title>Mukund Kumar Thakur | Software Engineer</title>
+<meta name="description" content="Mukund Kumar Thakur — Software Engineer specializing in .NET, C#, ASP.NET Core, and microservices. 4+ years building backend systems, REST APIs, and SQL Server-backed platforms for healthcare and finance.">
+<meta name="author" content="Mukund Kumar Thakur">
+<link rel="canonical" href="https://mukundkt.dev/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mukund Kumar Thakur | Software Engineer">
+<meta property="og:description" content="Backend-focused .NET developer with 4+ years of experience building scalable enterprise applications across healthcare and finance — APIs, microservices, databases, security, performance.">
+<meta property="og:url" content="https://mukundkt.dev/">
+<meta property="og:site_name" content="Mukund Kumar Thakur">
+<meta property="og:image" content="https://mukundkt.dev/mukund-photo.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mukund Kumar Thakur | Software Engineer">
+<meta name="twitter:description" content="Backend-focused .NET developer — APIs, microservices, SQL Server, security, and performance for healthcare and finance platforms.">
+<meta name="twitter:image" content="https://mukundkt.dev/mukund-photo.jpg">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#FAFAFA">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mukund Kumar Thakur",
+  "jobTitle": "Software Engineer",
+  "url": "https://mukundkt.dev/",
+  "email": "mailto:mukundkt@outlook.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Bangalore", "addressCountry": "IN" },
+  "sameAs": ["https://www.linkedin.com/in/mukundkt/"],
+  "knowsAbout": ["C#", "ASP.NET Core", "Microservices", "REST APIs", "SQL Server", "Angular"]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/>
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v1.5A5.98 5.98 0 0 1 16 8Z"/>
+      <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+    </symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/>
+    </symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/>
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 12h14m-6-6 6 6-6 6"/>
+    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 7h16M4 12h16M4 17h16"/>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 6 6 18M6 6l12 12"/>
+    </symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 5v14M5 12h14"/>
+    </symbol>
+    <symbol id="icon-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="3" width="20" height="7" rx="1.5"/><rect x="2" y="14" width="20" height="7" rx="1.5"/>
+      <path d="M6 6.5h.01M6 17.5h.01"/>
+    </symbol>
+    <symbol id="icon-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>
+    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/>
+    </symbol>
+    <symbol id="icon-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/>
+    </symbol>
+    <symbol id="icon-git-branch" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+      <path d="M18 9a9 9 0 0 1-9 9"/>
+    </symbol>
+    <symbol id="icon-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/>
+    </symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+      <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+    </symbol>
+    <symbol id="icon-message" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-4.5 7.4 8.5 8.5 0 0 1-8.9-.3L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 8-8.5h.5a8.48 8.48 0 0 1 8 8v.5Z"/>
+    </symbol>
+    <symbol id="icon-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+    </symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+    </symbol>
+    <symbol id="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#home" aria-label="Mukund Kumar Thakur — home">
+      <span class="brand-mark" aria-hidden="true">MT</span>
+      <span class="brand-name">Mukund Kumar Thakur</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#experience">Experience</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#projects">Projects</a>
+      <a href="#engineering">Engineering</a>
+      <a href="#writing">Writing</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme">
+        <svg width="17" height="17" aria-hidden="true" class="icon-sun"><use href="#icon-sun"/></svg>
+        <svg width="17" height="17" aria-hidden="true" class="icon-moon"><use href="#icon-moon"/></svg>
+      </button>
+      <a class="btn btn-secondary" href="Mukund_Kumar_Thakur_Resume.pdf" download>
+        <svg width="16" height="16" aria-hidden="true"><use href="#icon-download"/></svg>
+        <span>Resume</span>
+      </a>
+      <a class="btn btn-primary" href="#contact">
+        <span>Contact</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="20" height="20" aria-hidden="true"><use href="#icon-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#leadership">Leadership</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#engineering">Engineering</a></li>
+    <li><a href="#writing">Writing</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Switch to light theme">
+      <svg width="17" height="17" aria-hidden="true" class="icon-sun"><use href="#icon-sun"/></svg>
+      <svg width="17" height="17" aria-hidden="true" class="icon-moon"><use href="#icon-moon"/></svg>
+      <span class="theme-toggle-label">Light mode</span>
+    </button>
+    <a class="btn btn-secondary" href="Mukund_Kumar_Thakur_Resume.pdf" download>
+      <svg width="16" height="16" aria-hidden="true"><use href="#icon-download"/></svg>
+      <span>Download Resume</span>
+    </a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============================= HOME / HERO ============================= -->
+  <section id="home" class="hero" aria-labelledby="hero-heading">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <div class="hero-identity">
+          <img class="hero-avatar" src="mukund-photo.jpg" alt="Portrait of Mukund Kumar Thakur" width="84" height="84">
+          <div>
+            <p class="hero-name">Mukund Kumar Thakur</p>
+            <p class="hero-role text-mono">Software Engineer · Backend · .NET · Bangalore, India</p>
+          </div>
+        </div>
+        <h1 id="hero-heading">Building reliable backend systems that <span class="accent-text">solve real business problems.</span></h1>
+        <p class="hero-sub">Backend-focused .NET developer with 4+ years of experience building scalable enterprise applications across healthcare and finance, with a focus on APIs, microservices, databases, security, and performance.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">
+            <span>View Projects</span>
+            <svg width="16" height="16" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
+          </a>
+          <a class="btn btn-secondary" href="Mukund_Kumar_Thakur_Resume.pdf" download>
+            <svg width="16" height="16" aria-hidden="true"><use href="#icon-download"/></svg>
+            <span>Download Resume</span>
+          </a>
+        </div>
+        <div class="hero-meta">
+          <a href="#contact" title="Professional work is closed-source — see the Contact section">
+            <svg aria-hidden="true"><use href="#icon-github"/></svg> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/mukundkt/" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true"><use href="#icon-linkedin"/></svg> LinkedIn
+          </a>
+          <a href="mailto:mukundkt@outlook.com">
+            <svg aria-hidden="true"><use href="#icon-mail"/></svg> mukundkt@outlook.com
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <svg class="diagram" viewBox="0 0 320 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram: Client connects through an API Gateway, then Authentication, into Microservices, backed by SQL Server">
+          <line class="flow-line animated" x1="160" y1="55" x2="160" y2="105"/>
+          <line class="flow-line animated" x1="160" y1="145" x2="160" y2="195"/>
+          <line class="flow-line animated" x1="160" y1="235" x2="160" y2="285"/>
+          <line class="flow-line animated" x1="160" y1="325" x2="160" y2="345"/>
+
+          <rect class="node-rect" x="70" y="20" width="180" height="36" rx="8"/>
+          <text class="node-label" x="160" y="43">Client</text>
+
+          <rect class="node-rect" x="70" y="110" width="180" height="36" rx="8"/>
+          <text class="node-label" x="160" y="129">API Gateway</text>
+          <text class="node-sublabel" x="160" y="141">REST · Swagger</text>
+
+          <rect class="node-rect accent-node" x="70" y="200" width="180" height="36" rx="8"/>
+          <text class="node-label" x="160" y="219">Authentication</text>
+          <text class="node-sublabel" x="160" y="231">JWT · role-based</text>
+
+          <rect class="node-rect" x="70" y="290" width="180" height="36" rx="8"/>
+          <text class="node-label" x="160" y="309">Microservices</text>
+          <text class="node-sublabel" x="160" y="321">C# · ASP.NET Core</text>
+
+          <rect class="node-rect" x="70" y="350" width="180" height="36" rx="8"/>
+          <text class="node-label" x="160" y="369">SQL Server</text>
+          <text class="node-sublabel" x="160" y="381">Dapper · EF Core</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= SNAPSHOT ============================= -->
+  <section class="snapshot" aria-label="Engineering snapshot">
+    <div class="container reveal">
+      <div class="snapshot-grid">
+
+        <div class="metric-card">
+          <button class="metric-info-btn" aria-expanded="false" aria-controls="detail-years">i</button>
+          <div class="metric-value">4+</div>
+          <div class="metric-label">Years<br>Software Engineering</div>
+          <div class="metric-detail" id="detail-years">Since August 2022 at Enaviya Information Technologies, across three production systems in healthcare, finance, and safety-compliance.</div>
+        </div>
+
+        <div class="metric-card">
+          <button class="metric-info-btn" aria-expanded="false" aria-controls="detail-services">i</button>
+          <div class="metric-value">6+</div>
+          <div class="metric-label">Backend<br>Microservices</div>
+          <div class="metric-detail" id="detail-services">Inventory, Purchase, OPD, OEM, and supporting services on the healthcare platform — built on ASP.NET Core and C#.</div>
+        </div>
+
+        <div class="metric-card">
+          <button class="metric-info-btn" aria-expanded="false" aria-controls="detail-api">i</button>
+          <div class="metric-value">~35%</div>
+          <div class="metric-label">API Response<br>Improvement</div>
+          <div class="metric-detail" id="detail-api">From SOLID-driven microservice decomposition on the healthcare platform's highest-traffic endpoints.</div>
+        </div>
+
+        <div class="metric-card">
+          <button class="metric-info-btn" aria-expanded="false" aria-controls="detail-db">i</button>
+          <div class="metric-value">40%+</div>
+          <div class="metric-label">Database Retrieval<br>Improvement</div>
+          <div class="metric-detail" id="detail-db">Query and stored-procedure optimization via Dapper on high-volume transactional tables.</div>
+        </div>
+
+        <div class="metric-card">
+          <button class="metric-info-btn" aria-expanded="false" aria-controls="detail-dau">i</button>
+          <div class="metric-value">5,000+</div>
+          <div class="metric-label">Daily Active<br>Users</div>
+          <div class="metric-detail" id="detail-dau">Clinical and administrative users on the healthcare platform's Angular front end.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= EXPERIENCE ============================= -->
+  <section id="experience" aria-labelledby="experience-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Experience</p>
+        <h2 class="section-title" id="experience-heading">Four years, one company, three production systems.</h2>
+        <p class="section-desc">A single engineering track — each project handed more scope and more production responsibility than the last.</p>
+      </div>
+
+      <div class="timeline-header reveal">
+        <div>
+          <div class="role">Software Engineer</div>
+          <div class="company">Enaviya Information Technologies Pvt. Ltd.</div>
+        </div>
+        <div class="text-mono">Aug 2022 — Present · Bangalore, India</div>
+      </div>
+
+      <p class="section-desc reveal" style="margin-bottom:32px;">Primary backend engineer across three enterprise systems spanning healthcare, finance, and safety compliance — API design and documentation, service decomposition, SQL Server performance, authentication/authorization, and CI/CD, inside Agile/Scrum teams.</p>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-period">Jan 2024 — Present</div>
+          <h3>Integrated Healthcare Technology Management</h3>
+          <span class="timeline-domain">Healthcare · Microservices platform</span>
+          <p class="timeline-summary">Decomposed hospital operations (inventory, purchasing, OPD, OEM) into independent microservices behind a shared auth layer, cutting API response time ~35% and lifting data-retrieval performance 40%+ for a platform now serving 5,000+ daily users.</p>
+          <div class="timeline-tech">
+            <span class="badge">ASP.NET Core</span><span class="badge">C#</span><span class="badge">Dapper</span>
+            <span class="badge">SQL Server</span><span class="badge">Angular</span><span class="badge">JWT</span>
+          </div>
+          <a class="btn btn-ghost" href="#project-healthcare" style="padding-left:0;margin-top:12px;">
+            Full case study <svg width="14" height="14" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
+          </a>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-period">Apr 2023 — Dec 2023</div>
+          <h3>Financial Assurance Portal</h3>
+          <span class="timeline-domain">Finance · Audit &amp; compliance</span>
+          <p class="timeline-summary">Built a multi-step audit workflow engine with AI-assisted reporting on top, cutting manual processing time ~40% and raising auditor productivity ~25% across report cycles of 10k+ records.</p>
+          <div class="timeline-tech">
+            <span class="badge">ASP.NET MVC</span><span class="badge">EF Core</span><span class="badge">SQL Server</span>
+            <span class="badge">OpenAI / GPT API</span><span class="badge">JavaScript</span>
+          </div>
+          <a class="btn btn-ghost" href="#project-financial" style="padding-left:0;margin-top:12px;">
+            Full case study <svg width="14" height="14" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
+          </a>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-period">Aug 2022 — Mar 2023</div>
+          <h3>Environment, Health &amp; Safety Application</h3>
+          <span class="timeline-domain">Safety compliance · SAP-integrated</span>
+          <p class="timeline-summary">Digitized incident and hazard reporting with role-based access and SAP-compatible integrations — the first production system I owned end to end.</p>
+          <div class="timeline-tech">
+            <span class="badge">ASP.NET Core</span><span class="badge">EF Core</span><span class="badge">SQL Server</span><span class="badge">jQuery</span>
+          </div>
+          <a class="btn btn-ghost" href="#project-ehs" style="padding-left:0;margin-top:12px;">
+            Full case study <svg width="14" height="14" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= LEADERSHIP ============================= -->
+  <section id="leadership" aria-labelledby="leadership-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Leadership</p>
+        <h2 class="section-title" id="leadership-heading">Delivery ownership, not just development.</h2>
+        <p class="section-desc">Four years in, the role has grown past writing code — client conversations, team coordination, and task planning are now part of how these projects actually ship. This sits alongside the Software Engineer title, not in place of it.</p>
+      </div>
+
+      <div class="tech-grid reveal">
+        <div class="tech-card">
+          <h3><svg aria-hidden="true"><use href="#icon-message"/></svg> Client Discussions</h3>
+          <p class="leadership-copy">Sit in on client and stakeholder conversations to clarify requirements, flag technical trade-offs early, and translate business asks into scoped, buildable work for the team.</p>
+        </div>
+        <div class="tech-card">
+          <h3><svg aria-hidden="true"><use href="#icon-users"/></svg> Team Coordination &amp; Task Allocation</h3>
+          <p class="leadership-copy">Break project scope into tasks, assign work based on what each teammate is strongest at and what's due next, and keep day-to-day delivery on track across the sprint.</p>
+        </div>
+        <div class="tech-card">
+          <h3><svg aria-hidden="true"><use href="#icon-code"/></svg> Hands-on Development</h3>
+          <p class="leadership-copy">Stay in the codebase rather than stepping fully into a non-technical role — writing production code, reviewing pull requests, and unblocking the team on the hard problems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= PROJECTS ============================= -->
+  <section id="projects" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Projects</p>
+        <h2 class="section-title" id="projects-heading">Case studies, not bullet points.</h2>
+        <p class="section-desc">Problem, architecture, trade-offs, and outcome for each production system — the depth a résumé line can't carry.</p>
+      </div>
+
+      <div class="projects-list reveal">
+
+        <!-- HEALTHCARE -->
+        <article class="project-card" id="project-healthcare">
+          <details>
+            <summary class="project-summary">
+              <div class="project-summary-main">
+                <span class="project-tag">Healthcare · Enterprise Platform</span>
+                <h3>Integrated Healthcare Technology Management</h3>
+                <div class="project-period">Jan 2024 — Present</div>
+                <p class="project-blurb">A modular backend for hospital operations — inventory, purchasing, outpatient, and equipment tracking — rebuilt as independent microservices behind a shared authentication layer.</p>
+              </div>
+              <div class="project-metrics">
+                <div class="project-metric"><div class="val">~35%</div><div class="lbl">faster API</div></div>
+                <div class="project-metric"><div class="val">40%+</div><div class="lbl">faster retrieval</div></div>
+                <div class="project-metric"><div class="val">5,000+</div><div class="lbl">daily users</div></div>
+              </div>
+              <span class="project-toggle" aria-hidden="true"><svg width="16" height="16"><use href="#icon-plus"/></svg></span>
+            </summary>
+
+            <div class="project-body">
+              <div class="case-study">
+                <div class="case-block">
+                  <h4>Problem</h4>
+                  <p>Inventory, procurement, OPD scheduling, and equipment (OEM) tracking ran as tightly coupled modules — slow under load and hard to change independently as usage scaled.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Context</h4>
+                  <p>A production hospital-technology platform used daily by clinical and administrative staff, where every endpoint needs enforced authentication and integration touchpoints need clear, documented contracts.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Architecture</h4>
+                  <p>6+ independent microservices (Inventory, Purchase, OPD, OEM, and supporting services) on ASP.NET Core and C#, each with its own Dapper-based data-access boundary, sitting behind a shared JWT authentication/authorization layer and consumed by an Angular 13+ front end. APIs documented and versioned with Swagger.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Implementation</h4>
+                  <p>I designed the services' domain logic and API contracts applying SOLID principles, implemented JWT authentication and role-based authorization across services, wrote and optimized the SQL Server queries and stored procedures behind the highest-traffic endpoints, and built the Angular components consuming these APIs in production — plus the shared global exception handling, logging, and Azure DevOps CI/CD pipeline.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Engineering Challenges</h4>
+                  <ul>
+                    <li>Splitting coupled functionality into independently deployable services without breaking existing integrations</li>
+                    <li>Keeping query performance predictable on high-volume transactional tables as usage grew</li>
+                    <li>Enforcing consistent auth behavior across every service boundary, not per endpoint</li>
+                  </ul>
+                </div>
+                <div class="case-block">
+                  <h4>Trade-offs</h4>
+                  <p>Chose Dapper over EF Core on transaction-heavy endpoints — more SQL to write and maintain, in exchange for predictable query plans and lower ORM overhead. Centralized authentication adds a network hop per request, accepted for a single auditable access-control point instead of duplicated auth logic per service.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Performance</h4>
+                  <p>Service decomposition plus targeted query/stored-procedure optimization brought API response times down ~35% and data retrieval down 40%+ on the affected high-volume transactions.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Security</h4>
+                  <p>JWT-based authentication with role-based authorization enforced at the API layer, scoped so clinical and administrative users reach only the data and actions relevant to their role.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Outcome</h4>
+                  <p>A microservices backend serving 5,000+ daily active users across inventory, purchasing, OPD, and OEM workflows, with Swagger contracts letting other internal teams and third-party systems integrate without direct coordination.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Lessons</h4>
+                  <p>I'd introduce contract/integration tests between services earlier — relying mainly on manual QA across service boundaries got harder to sustain as the number of services grew.</p>
+                </div>
+              </div>
+
+              <div class="diagram-wrap">
+                <div class="diagram-title">// architecture — healthcare platform</div>
+                <svg class="diagram" viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Angular Client to REST APIs to Authentication and Authorization to four healthcare microservices (Inventory, Purchase, OPD, OEM) to Dapper to SQL Server">
+                  <line class="flow-line animated" x1="360" y1="46" x2="360" y2="76"/>
+                  <line class="flow-line animated" x1="360" y1="106" x2="360" y2="136"/>
+                  <line class="flow-line" x1="360" y1="166" x2="105" y2="196"/>
+                  <line class="flow-line" x1="360" y1="166" x2="245" y2="196"/>
+                  <line class="flow-line" x1="360" y1="166" x2="385" y2="196"/>
+                  <line class="flow-line" x1="360" y1="166" x2="525" y2="196"/>
+                  <line class="flow-line animated" x1="105" y1="226" x2="360" y2="256"/>
+                  <line class="flow-line animated" x1="245" y1="226" x2="360" y2="256"/>
+                  <line class="flow-line animated" x1="385" y1="226" x2="360" y2="256"/>
+                  <line class="flow-line animated" x1="525" y1="226" x2="360" y2="256"/>
+
+                  <rect class="node-rect" x="270" y="10" width="180" height="36" rx="8"/>
+                  <text class="node-label" x="360" y="33">Angular Client</text>
+
+                  <rect class="node-rect" x="270" y="70" width="180" height="36" rx="8"/>
+                  <text class="node-label" x="360" y="93">REST APIs</text>
+
+                  <rect class="node-rect accent-node" x="270" y="130" width="180" height="36" rx="8"/>
+                  <text class="node-label" x="360" y="153">Auth / Authorization</text>
+
+                  <rect class="node-rect" x="45" y="190" width="120" height="36" rx="8"/>
+                  <text class="node-label" x="105" y="209">Inventory</text>
+                  <rect class="node-rect" x="185" y="190" width="120" height="36" rx="8"/>
+                  <text class="node-label" x="245" y="209">Purchase</text>
+                  <rect class="node-rect" x="325" y="190" width="120" height="36" rx="8"/>
+                  <text class="node-label" x="385" y="209">OPD</text>
+                  <rect class="node-rect" x="465" y="190" width="120" height="36" rx="8"/>
+                  <text class="node-label" x="525" y="209">OEM</text>
+
+                  <rect class="node-rect" x="270" y="250" width="180" height="36" rx="8"/>
+                  <text class="node-label" x="360" y="269">Dapper → SQL Server</text>
+                </svg>
+              </div>
+            </div>
+          </details>
+        </article>
+
+        <!-- FINANCIAL -->
+        <article class="project-card" id="project-financial">
+          <details>
+            <summary class="project-summary">
+              <div class="project-summary-main">
+                <span class="project-tag">Finance · Audit &amp; Compliance</span>
+                <h3>Financial Assurance Portal</h3>
+                <div class="project-period">Apr 2023 — Dec 2023</div>
+                <p class="project-blurb">An audit and compliance portal with dynamic multi-step workflows and an AI-assisted reporting layer that turns raw audit data into summaries, risk insights, and visual reports.</p>
+              </div>
+              <div class="project-metrics">
+                <div class="project-metric"><div class="val">~40%</div><div class="lbl">less manual work</div></div>
+                <div class="project-metric"><div class="val">~25%</div><div class="lbl">more productivity</div></div>
+                <div class="project-metric"><div class="val">10k+</div><div class="lbl">records / report</div></div>
+              </div>
+              <span class="project-toggle" aria-hidden="true"><svg width="16" height="16"><use href="#icon-plus"/></svg></span>
+            </summary>
+
+            <div class="project-body">
+              <div class="case-study">
+                <div class="case-block">
+                  <h4>Problem</h4>
+                  <p>Audit and compliance reporting was largely manual — auditors assembling findings, risk assessments, and summaries by hand across multi-step review workflows, slow and error-prone as record volumes grew.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Context</h4>
+                  <p>An enterprise finance/audit portal used by auditors and business stakeholders who need accurate, defensible reports; workflows vary by audit type, so the system had to model different multi-step processes without hardcoding each one.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Architecture</h4>
+                  <p>ASP.NET MVC application backed by SQL Server via EF Core, with a workflow engine modeled using OOP (polymorphism and inheritance) so new audit workflow types are added as new classes rather than new branching logic. An AI-assisted reporting layer calls OpenAI/GPT APIs for on-demand narrative summaries and risk insights, paired with JavaScript-built interactive heatmap visualizations.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Implementation</h4>
+                  <p>I built the multi-step workflow model and its OOP class hierarchy, the EF Core data layer and the indexed queries/stored procedures behind report generation, the GPT-API integration for AI-assisted summaries, the heatmap visualizations, and the validation, error-handling, and audit-trail logging needed for compliance readiness — plus branching, code review, and release management through TFS.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Engineering Challenges</h4>
+                  <ul>
+                    <li>Modeling genuinely different audit workflows through a shared polymorphic structure without the abstraction leaking</li>
+                    <li>Keeping report generation fast and accurate over 10k+ records</li>
+                    <li>Integrating a third-party AI API into a compliance-sensitive workflow without it becoming a single point of failure</li>
+                  </ul>
+                </div>
+                <div class="case-block">
+                  <h4>Trade-offs</h4>
+                  <p>GPT-generated summaries are used as an assistive first draft auditors review and adjust, not an autonomous output — trading full automation for auditor trust and compliance defensibility. Report queries were optimized with targeted indexes and stored procedures rather than a broader data-warehouse rework, which fit the timeline but would need revisiting at much larger volumes.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Performance</h4>
+                  <p>Indexed queries and custom stored procedures kept report generation responsive across 10k+ records; the workflow and AI-assist changes together cut manual processing time ~40% and lifted auditor productivity ~25%.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Security</h4>
+                  <p>Validation, error handling, and audit-trail mechanisms built into the workflow to preserve data accuracy and support compliance review, with controlled, reviewed releases through TFS.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Outcome</h4>
+                  <p>Auditors moved from manual report assembly to a workflow-driven portal with AI-assisted drafting and interactive risk visualizations, reducing processing time and increasing throughput on large record sets.</p>
+                </div>
+                <div class="case-block">
+                  <h4>Lessons</h4>
+                  <p>Given how much review time the GPT-assisted drafts saved, I'd push earlier for structured prompt templates and output validation around the AI integration, rather than refining that after the workflow engine was already in place.</p>
+                </div>
+              </div>
+
+              <div class="diagram-wrap">
+                <div class="diagram-title">// audit workflow & AI-assisted reporting pipeline</div>
+                <svg class="diagram" viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Audit data intake to multi-step workflow engine to EF Core and SQL Server, branching to AI-assisted reporting and risk heatmap visualization, into auditor review">
+                  <line class="flow-line animated" x1="150" y1="38" x2="230" y2="38"/>
+                  <line class="flow-line animated" x1="350" y1="38" x2="430" y2="38"/>
+                  <line class="flow-line" x1="490" y1="56" x2="490" y2="90" />
+                  <line class="flow-line animated" x1="490" y1="90" x2="380" y2="120"/>
+                  <line class="flow-line animated" x1="490" y1="90" x2="600" y2="120"/>
+                  <line class="flow-line animated" x1="380" y1="150" x2="490" y2="176"/>
+                  <line class="flow-line animated" x1="600" y1="150" x2="490" y2="176"/>
+
+                  <rect class="node-rect" x="20" y="20" width="130" height="36" rx="8"/>
+                  <text class="node-label" x="85" y="43">Audit Intake</text>
+
+                  <rect class="node-rect" x="230" y="20" width="120" height="36" rx="8"/>
+                  <text class="node-label" x="290" y="43">Workflow Engine</text>
+
+                  <rect class="node-rect accent-node" x="430" y="20" width="120" height="36" rx="8"/>
+                  <text class="node-label" x="490" y="39">EF Core</text>
+                  <text class="node-sublabel" x="490" y="51">SQL Server</text>
+
+                  <rect class="node-rect" x="320" y="120" width="120" height="30" rx="8"/>
+                  <text class="node-label" x="380" y="139" style="font-size:11px">AI Reporting</text>
+                  <rect class="node-rect" x="540" y="120" width="120" height="30" rx="8"/>
+                  <text class="node-label" x="600" y="139" style="font-size:11px">Risk Heatmap</text>
+
+                  <text class="node-sublabel" x="490" y="190">Auditor Review</text>
+                </svg>
+              </div>
+            </div>
+          </details>
+        </article>
+
+        <!-- EHS -->
+        <article class="project-card" id="project-ehs">
+          <details>
+            <summary class="project-summary">
+              <div class="project-summary-main">
+                <span class="project-tag">Safety &amp; Compliance</span>
+                <h3>Environment, Health &amp; Safety Application</h3>
+                <div class="project-period">Aug 2022 — Mar 2023</div>
+                <p class="project-blurb">Digitized incident and hazard reporting for safety compliance, with role-based access and SAP-compatible integrations.</p>
+              </div>
+              <span class="project-toggle" aria-hidden="true"><svg width="16" height="16"><use href="#icon-plus"/></svg></span>
+            </summary>
+
+            <div class="project-body">
+              <div class="case-study">
+                <div class="case-block full">
+                  <h4>Problem</h4>
+                  <p>Incident and hazard reporting was handled outside any central system, making it hard to enforce consistent data capture, controlled visibility, and downstream reporting across departments.</p>
+                </div>
+                <div class="case-block full">
+                  <h4>Solution</h4>
+                  <p>Built the incident and hazard reporting modules on ASP.NET Core, C#, and jQuery, using Entity Framework Core against SQL Server to keep data integrity across departments. Added role-based access and validation logic so records were captured accurately and visible only to the right roles, integrated third-party APIs to keep the system SAP-compatible for downstream reporting, and added logging and error handling to make production issues traceable.</p>
+                </div>
+                <div class="case-block full">
+                  <h4>Engineering notes</h4>
+                  <p>My first production system end to end at Enaviya. The role-based-access and logging/error-handling patterns built here carried forward into how the later healthcare-platform services were structured.</p>
+                </div>
+              </div>
+            </div>
+          </details>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= ENGINEERING ============================= -->
+  <section id="engineering" aria-labelledby="engineering-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Engineering</p>
+        <h2 class="section-title" id="engineering-heading">What I actually work with.</h2>
+        <p class="section-desc">Grouped by where each piece sits in a production system — not a percentage in sight.</p>
+      </div>
+
+      <div class="tech-grid reveal">
+        <div class="tech-card">
+          <h3><svg aria-hidden="true"><use href="#icon-server"/></svg> Backend</h3>
+          <div class="tech-tags">
+            <span class="badge">C#</span><span class="badge">ASP.NET Core</span><span class="badge">Web API</span>
+            <span class="badge">MVC</span><span class="badge">REST APIs</span><span class="badge">Microservices</span>
+          </div>
+        </div>
+        <div class="tech-card">
+          <h3><svg aria-hidden="true"><use href="#icon-database"/></svg> Data</h3>
+          <div class="tech-tags">
+            <span class="badge">SQL Server</span><span class="badge">Dapper</span><span class="badge">EF Core</span>
+            <span class="badge">Oracle</span><span class="badge">MySQL</span><span class="badge">Query optimization</span>
+            <span class="badge">Stored procedures</span><span class="badge">Indexing</span>
+          </div>
+        </div>
+        <div class="tech-card">
+          <h3><svg aria-hidden="true"><use href="#icon-shield"/></svg> Security</h3>
+          <div class="tech-tags">
+            <span class="badge">JWT</span><span class="badge">Role-based authorization</span><span class="badge">API security</span>
+          </div>
+        </div>
+        <div class="tech-card">
+          <h3><svg aria-hidden="true"><use href="#icon-layers"/></svg> Architecture</h3>
+          <div class="tech-tags">
+            <span class="badge">Microservices</span><span class="badge">SOLID</span><span class="badge">OOP</span>
+            <span class="badge">API contracts</span><span class="badge">Global exception handling</span>
+            <span class="badge">Logging</span><span class="badge">System integrations</span>
+          </div>
+        </div>
+        <div class="tech-card">
+          <h3><svg aria-hidden="true"><use href="#icon-git-branch"/></svg> DevOps</h3>
+          <div class="tech-tags">
+            <span class="badge">Azure DevOps</span><span class="badge">Git</span><span class="badge">TFS</span><span class="badge">CI/CD</span>
+          </div>
+        </div>
+        <div class="tech-card">
+          <h3><svg aria-hidden="true"><use href="#icon-monitor"/></svg> Frontend</h3>
+          <div class="tech-tags">
+            <span class="badge">Angular</span><span class="badge">TypeScript</span><span class="badge">JavaScript</span>
+            <span class="badge">jQuery</span><span class="badge">HTML</span><span class="badge">CSS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="principles reveal">
+        <div class="section-head" style="margin-bottom:28px;">
+          <p class="eyebrow">Principles</p>
+          <h2 class="section-title" style="font-size:clamp(1.4rem,2.6vw,2rem);">How I think about engineering</h2>
+        </div>
+        <div class="principles-grid">
+          <div class="principle-card">
+            <div class="principle-num">01 / Performance</div>
+            <h3>Measure before optimizing.</h3>
+            <p>Guesswork on what's slow wastes more time than the optimization itself.</p>
+          </div>
+          <div class="principle-card">
+            <div class="principle-num">02 / Maintainability</div>
+            <h3>Prefer simple designs that teams can understand and change.</h3>
+            <p>Clever code that only the author understands is a liability, not an asset.</p>
+          </div>
+          <div class="principle-card">
+            <div class="principle-num">03 / Security</div>
+            <h3>Design auth in — don't bolt it on.</h3>
+            <p>Authentication and authorization should be part of the system's shape from the start.</p>
+          </div>
+          <div class="principle-card">
+            <div class="principle-num">04 / Reliability</div>
+            <h3>Plan for predictable failure.</h3>
+            <p>Production systems need predictable failure handling, logging, and observability.</p>
+          </div>
+          <div class="principle-card">
+            <div class="principle-num">05 / Data</div>
+            <h3>The database is part of the application.</h3>
+            <p>Schema design and query performance are engineering work, not an afterthought.</p>
+          </div>
+          <div class="principle-card">
+            <div class="principle-num">06 / Architecture</div>
+            <h3>Complexity has to earn its place.</h3>
+            <p>Use it when it solves a real problem — not because a diagram looks impressive.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= WRITING ============================= -->
+  <section id="writing" aria-labelledby="writing-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Writing</p>
+        <h2 class="section-title" id="writing-heading">Field notes.</h2>
+        <p class="section-desc">Short, practical takeaways from production work — not filler posts.</p>
+      </div>
+
+      <div class="writing-grid reveal">
+        <div class="article-card">
+          <div class="article-topic">API Design</div>
+          <h3>Designing REST APIs in ASP.NET Core</h3>
+          <p>Resource-oriented routes, consistent status codes, and versioning decided up front save the most pain later. I document contracts with Swagger before a third-party team ever integrates, keep controllers thin, and treat a consistent error-response shape as a feature, not a nice-to-have.</p>
+        </div>
+        <div class="article-card">
+          <div class="article-topic">Data Access</div>
+          <h3>Dapper vs Entity Framework Core</h3>
+          <p>EF Core wins on developer velocity — CRUD-heavy screens, migrations, LINQ queries that don't need hand-tuning. Dapper earns its place where query plans and latency actually matter: high-volume reads, reporting over large tables. Mixing both is fine as long as the boundary is explicit.</p>
+        </div>
+        <div class="article-card">
+          <div class="article-topic">Security</div>
+          <h3>JWT Authentication &amp; Role-Based Authorization</h3>
+          <p>JWT gets authentication half right; the other half is deciding what a token's claims actually authorize once it reaches a service. I design roles as part of the API contract and centralize token validation so every service enforces access the same way.</p>
+        </div>
+        <div class="article-card">
+          <div class="article-topic">Performance</div>
+          <h3>SQL Query Optimization Techniques</h3>
+          <p>Most query problems I've fixed came down to a missing or wrong index. Before touching a query, I read the actual execution plan — what's scanning instead of seeking, what's spilling to tempdb — and reserve stored procedures for the highest-traffic paths.</p>
+        </div>
+        <div class="article-card">
+          <div class="article-topic">Architecture</div>
+          <h3>Microservices: When They Help and When They Don't</h3>
+          <p>Splitting the healthcare platform paid off because inventory, purchasing, OPD, and OEM genuinely had different change rates and owners. It's not free — you trade function calls for network calls and take on service-to-service auth as a first-class problem.</p>
+        </div>
+        <div class="article-card">
+          <div class="article-topic">Reliability</div>
+          <h3>Global Exception Handling in ASP.NET Core</h3>
+          <p>One exception-handling middleware that maps exceptions to a consistent response, logs with enough context to debug from, and never leaks internal details to the client — cheap to add on day one, expensive to retrofit once every controller has its own try/catch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= ABOUT ============================= -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="container about-grid">
+      <div class="reveal">
+        <div class="section-head" style="margin-bottom:24px;">
+          <p class="eyebrow">About</p>
+          <h2 class="section-title" id="about-heading">Backend engineering, applied to systems that can't be wrong.</h2>
+        </div>
+        <div class="about-copy">
+          <p>I build the backend systems enterprises run their operations on — not prototypes, systems already in front of thousands of daily users that can't afford to be wrong. Most of my work sits at the intersection of <strong>API design</strong>, <strong>database performance</strong>, and <strong>access control</strong>: turning business requirements into services that are fast under real load, secure by default, and structured so another engineer can extend them without unpicking a mess.</p>
+          <p>The two domains I've spent the most time in — <strong>healthcare</strong> and <strong>finance</strong> — both have low tolerance for sloppy engineering. Healthcare data access has to be scoped correctly every time; audit and compliance workflows have to produce numbers people are willing to sign off on. That's shaped how I approach new work: authentication and authorization designed in from the start, query performance treated as part of the feature, and enough logging and error handling that production issues are diagnosable instead of mysterious.</p>
+          <p>Day to day that means C# and ASP.NET Core on the backend, SQL Server tuned through Dapper or EF Core depending on what the endpoint needs, Angular where the API needs a front end, and Azure DevOps pipelines carrying it to production inside an Agile team.</p>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <dl class="about-facts">
+          <div class="about-fact"><dt>Location</dt><dd>Bangalore, India</dd></div>
+          <div class="about-fact"><dt>Experience</dt><dd>4+ years</dd></div>
+          <div class="about-fact"><dt>Focus</dt><dd>Backend systems, APIs, microservices, SQL Server</dd></div>
+          <div class="about-fact"><dt>Domains</dt><dd>Healthcare, Finance, Enterprise applications</dd></div>
+          <div class="about-fact"><dt>Education</dt><dd>B.E. Computer Science — VTU, Bangalore (2018–2022)</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= CONTACT ============================= -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="container reveal">
+      <div class="contact-panel">
+        <div>
+          <p class="eyebrow" style="margin-bottom:14px;">Contact</p>
+          <h2 id="contact-heading">Let's build something useful.</h2>
+        </div>
+        <div>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:mukundkt@outlook.com">
+              <svg aria-hidden="true"><use href="#icon-mail"/></svg> mukundkt@outlook.com
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/mukundkt/" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#icon-linkedin"/></svg> linkedin.com/in/mukundkt
+            </a>
+            <span class="contact-link" style="cursor:default;">
+              <svg aria-hidden="true"><use href="#icon-github"/></svg> GitHub — see note below
+            </span>
+          </div>
+          <p class="contact-note">Professional work here has been built inside closed-source enterprise systems (healthcare and finance platforms), so there's no public repository to link to — the project case studies above are written to give equivalent visibility into how the systems were designed and built.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <p>Mukund Kumar Thakur</p>
+      <p>Software Engineer · Backend · .NET</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/mukundkt/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg aria-hidden="true"><use href="#icon-linkedin"/></svg>
+      </a>
+      <a href="mailto:mukundkt@outlook.com" aria-label="Email">
+        <svg aria-hidden="true"><use href="#icon-mail"/></svg>
+      </a>
+      <a href="#contact" aria-label="GitHub — see contact section">
+        <svg aria-hidden="true"><use href="#icon-github"/></svg>
+      </a>
+    </div>
+    <p class="footer-copy">© <span id="year">2026</span> Mukund Kumar Thakur</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

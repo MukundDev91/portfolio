@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('theme');
+      document.documentElement.setAttribute('data-theme', stored || 'light');
+    } catch (e) {}
+  })();
+</script>
+<title>Page not found | Mukund Kumar Thakur</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#FAFAFA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .notfound {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .notfound .code {
+    font-family: var(--font-mono);
+    color: var(--accent);
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .notfound h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 650; letter-spacing: -0.02em; }
+  .notfound p { color: var(--text-secondary); margin-top: 14px; max-width: 52ch; }
+  .notfound .actions { display: flex; gap: 12px; margin-top: 28px; }
+</style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">MT</span>
+        <span>Mukund Kumar Thakur</span>
+      </a>
+    </div>
+  </header>
+  <main class="container">
+    <div class="notfound">
+      <p class="code">404 / NOT_FOUND</p>
+      <h1>This route doesn't exist.</h1>
+      <p>The page you're looking for was moved, renamed, or never existed. Everything on this site lives on one page — try the sections below.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/">Back to home</a>
+        <a class="btn btn-secondary" href="/#contact">Contact</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
