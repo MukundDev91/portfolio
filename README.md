@@ -62,7 +62,7 @@ There is no build step. `public/` is already the production output.
 3. `vercel.json` sets `outputDirectory: "public"` so Vercel serves `public/` as the site root —
    no build command is needed.
 4. The site's canonical domain is currently set to
-   `https://portfolio-fab7ou69x-code-raiders.vercel.app/` across `index.html`'s
+   `https://portfolio-code-raiders.vercel.app/` across `index.html`'s
    `<link rel="canonical">`, Open Graph/Twitter tags, JSON-LD, `robots.txt`, and `sitemap.xml`.
    If a custom domain or a stable (non-hash) Vercel alias is attached later, update all of those
    to match — a per-deployment preview URL can change on some redeploys.

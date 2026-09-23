@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio-fab7ou69x-code-raiders.vercel.app/sitemap.xml
+Sitemap: https://portfolio-code-raiders.vercel.app/sitemap.xml
