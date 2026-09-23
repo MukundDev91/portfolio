@@ -15,7 +15,8 @@
   --accent-secondary: #0EA5E9;
   --accent-dim: rgba(56, 189, 248, 0.12);
   --accent-contrast: #051018;
-  --code-bg: #0D1117;
+  --diagram-bg: #0D1117;
+  --diagram-node-bg: #18181B;
   --surface-hover: #1c1c1f;
   --nav-bg: rgba(9, 9, 11, 0.72);
   --shadow-card: none;
@@ -51,24 +52,11 @@
   --accent-secondary: #0369A1;
   --accent-dim: rgba(2, 132, 199, 0.08);
   --accent-contrast: #FFFFFF;
-  --code-bg: #0F172A;
+  --diagram-bg: #F1F5F9;
+  --diagram-node-bg: #FFFFFF;
   --surface-hover: #F4F4F5;
   --nav-bg: rgba(250, 250, 250, 0.78);
   --shadow-card: 0 1px 2px rgba(24, 24, 27, 0.04), 0 1px 8px rgba(24, 24, 27, 0.04);
-}
-
-/* Code/diagram panels stay dark in light mode too — a deliberate "terminal"
-   accent that reads as intentional rather than inconsistent theming. Their
-   own text/border tokens are pinned to dark-appropriate values so labels
-   stay legible against that fixed dark panel regardless of page theme. */
-:root[data-theme="light"] .hero-visual,
-:root[data-theme="light"] .diagram-wrap {
-  --surface: #111113;
-  --surface-elevated: #18181B;
-  --border: #27272A;
-  --border-hover: #3f3f46;
-  --text-primary: #F4F4F5;
-  --text-tertiary: #71717A;
 }
 
 /* ==========================================================================
@@ -444,11 +432,12 @@ h2.section-title {
 
 .hero-visual {
   border: 1px solid var(--border);
-  background: linear-gradient(180deg, var(--surface) 0%, var(--code-bg) 100%);
+  background: var(--diagram-bg);
   border-radius: var(--radius-lg);
   padding: clamp(20px, 3vw, 32px);
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-card);
 }
 .hero-visual::before {
   content: 'runtime.flow';
@@ -464,7 +453,7 @@ h2.section-title {
 /* Architecture diagram (shared) */
 .diagram { width: 100%; }
 .diagram .node-rect {
-  fill: var(--surface-elevated);
+  fill: var(--diagram-node-bg);
   stroke: var(--border);
   stroke-width: 1;
   transition: stroke var(--dur-base) var(--ease);
@@ -799,7 +788,7 @@ details[open] .project-toggle { transform: rotate(45deg); }
   margin-top: 28px;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  background: var(--code-bg);
+  background: var(--diagram-bg);
   padding: clamp(18px, 3vw, 28px);
 }
 .diagram-title {
