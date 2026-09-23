@@ -414,7 +414,13 @@ h2.section-title {
   font-size: clamp(16px, 1.6vw, 18.5px);
   color: var(--text-secondary);
   max-width: 56ch;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
+}
+
+.hero-target {
+  font-size: 13px;
+  color: var(--accent);
+  margin-bottom: 28px;
 }
 
 .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }

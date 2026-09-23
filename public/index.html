@@ -199,6 +199,7 @@
         </div>
         <h1 id="hero-heading">Building reliable backend systems that <span class="accent-text">solve real business problems.</span></h1>
         <p class="hero-sub">Backend-focused .NET developer with 4+ years of experience building scalable enterprise applications across healthcare and finance, with a focus on APIs, microservices, databases, security, and performance.</p>
+        <p class="hero-target text-mono">→ Currently exploring Senior Backend Engineer / Tech Lead roles</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#projects">
             <span>View Projects</span>
@@ -261,7 +262,7 @@
           <button class="metric-info-btn" aria-expanded="false" aria-controls="detail-years" aria-label="More detail about years of software engineering">i</button>
           <div class="metric-value">4+</div>
           <div class="metric-label">Years<br>Software Engineering</div>
-          <div class="metric-detail" id="detail-years">Since August 2022 at Enaviya Information Technologies, across three production systems in healthcare, finance, and safety-compliance.</div>
+          <div class="metric-detail" id="detail-years">Since August 2022 at Enaviya Information Technologies, across healthcare, finance, safety-compliance, and enterprise procurement.</div>
         </div>
 
         <div class="metric-card">
@@ -301,8 +302,8 @@
     <div class="container">
       <div class="section-head reveal">
         <p class="eyebrow">Experience</p>
-        <h2 class="section-title" id="experience-heading">Four years, one company, three production systems.</h2>
-        <p class="section-desc">A single engineering track — each project handed more scope and more production responsibility than the last.</p>
+        <h2 class="section-title" id="experience-heading">Four years, one company, four engineering threads.</h2>
+        <p class="section-desc">Three projects with a clear start and end, plus one running throughout — each handed more scope and more production responsibility than the last.</p>
       </div>
 
       <div class="timeline-header reveal">
@@ -313,7 +314,7 @@
         <div class="text-mono">Aug 2022 — Present · Bangalore, India</div>
       </div>
 
-      <p class="section-desc reveal" style="margin-bottom:32px;">Primary backend engineer across three enterprise systems spanning healthcare, finance, and safety compliance — API design and documentation, service decomposition, SQL Server performance, authentication/authorization, and CI/CD, inside Agile/Scrum teams.</p>
+      <p class="section-desc reveal" style="margin-bottom:32px;">Primary backend engineer across enterprise systems spanning healthcare, finance, safety compliance, and procurement — API design and documentation, service decomposition, solution architecture, SQL Server performance, authentication/authorization, and CI/CD, inside Agile/Scrum teams.</p>
 
       <div class="timeline">
         <div class="timeline-item reveal">
@@ -353,6 +354,20 @@
             <span class="badge">ASP.NET Core</span><span class="badge">EF Core</span><span class="badge">SQL Server</span><span class="badge">jQuery</span>
           </div>
           <a class="btn btn-ghost" href="#project-ehs" style="padding-left:0;margin-top:12px;">
+            Full case study <svg width="14" height="14" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
+          </a>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-period">Aug 2022 — Present · ongoing, alongside the above</div>
+          <h3>Enterprise E-Procurement Platform</h3>
+          <span class="timeline-domain">Enterprise Procurement · Solution Architecture &amp; Delivery</span>
+          <p class="timeline-summary">A running thread across the same four years rather than a separate chapter — solution design and architecture, requirements documentation, and delivery coordination on a modular-monolith procurement and vendor-management platform, alongside hands-on development.</p>
+          <div class="timeline-tech">
+            <span class="badge">ASP.NET Core</span><span class="badge">EF Core</span><span class="badge">SQL Server</span>
+            <span class="badge">Angular</span><span class="badge">Modular Monolith</span>
+          </div>
+          <a class="btn btn-ghost" href="#project-eprocurement" style="padding-left:0;margin-top:12px;">
             Full case study <svg width="14" height="14" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
           </a>
         </div>
@@ -638,6 +653,38 @@
           </details>
         </article>
 
+        <!-- E-PROCUREMENT -->
+        <article class="project-card" id="project-eprocurement">
+          <details>
+            <summary class="project-summary">
+              <div class="project-summary-main">
+                <span class="project-tag">Enterprise Procurement · Solution Architecture &amp; Delivery</span>
+                <h3>Enterprise E-Procurement Platform</h3>
+                <div class="project-period">Aug 2022 — Present · ongoing, alongside the projects above</div>
+                <p class="project-blurb">A modular-monolith procurement and vendor-management platform — solution design, requirements documentation, and delivery coordination alongside hands-on development, running throughout the same four years rather than as a separate chapter.</p>
+              </div>
+              <span class="project-toggle" aria-hidden="true"><svg width="16" height="16"><use href="#icon-plus"/></svg></span>
+            </summary>
+
+            <div class="project-body">
+              <div class="case-study">
+                <div class="case-block full">
+                  <h4>Role</h4>
+                  <p>Alongside the individual-contributor work on the three projects above, this has been a running thread across the same four years — contributing to solution design and system architecture, writing and maintaining requirements documentation, and coordinating delivery across the team, while staying hands-on with development rather than moving fully into a non-technical role.</p>
+                </div>
+                <div class="case-block full">
+                  <h4>Scope &amp; Architecture</h4>
+                  <p>The platform is a modular-monolith .NET backend (ASP.NET Core, EF Core, SQL Server) split into domain modules — vendor management, procurement workflows, budgets, identity, and others — behind a single API host, with an Angular front end and cross-module communication handled through a shared contracts layer, each module owning its own database schema rather than a shared one.</p>
+                </div>
+                <div class="case-block full">
+                  <h4>Engineering notes</h4>
+                  <p>Splitting time between solution design and hands-on delivery on the same platform means architectural decisions don't stay abstract for long — a call made in a requirements or design discussion is usually one I'm also implementing or supporting the team through soon after.</p>
+                </div>
+              </div>
+            </div>
+          </details>
+        </article>
+
       </div>
     </div>
   </section>
@@ -840,7 +887,7 @@
               <svg aria-hidden="true"><use href="#icon-github"/></svg> GitHub — see note below
             </span>
           </div>
-          <p class="contact-note">Professional work here has been built inside closed-source enterprise systems (healthcare and finance platforms), so there's no public repository to link to — the project case studies above are written to give equivalent visibility into how the systems were designed and built.</p>
+          <p class="contact-note">Professional work here has been built inside closed-source enterprise systems (healthcare, finance, and procurement platforms), so there's no public repository to link to — the project case studies above are written to give equivalent visibility into how the systems were designed and built.</p>
         </div>
       </div>
     </div>
