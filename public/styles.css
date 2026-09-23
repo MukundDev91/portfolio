@@ -348,7 +348,7 @@ h2.section-title {
 .mobile-menu .nav-right { flex-direction: column; align-items: stretch; }
 .mobile-menu .btn { justify-content: center; }
 
-@media (max-width: 860px) {
+@media (max-width: 1120px) {
   .nav-links { display: none; }
   .nav-inner .nav-right .btn-secondary span,
   .nav-inner .nav-right .btn-ghost span { display: none; }
@@ -357,7 +357,7 @@ h2.section-title {
 @media (max-width: 480px) {
   .brand-name { display: none; }
 }
-@media (min-width: 861px) {
+@media (min-width: 1121px) {
   .mobile-menu { display: none !important; }
 }
 

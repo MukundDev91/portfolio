@@ -61,15 +61,15 @@ There is no build step. `public/` is already the production output.
 2. Import it in Vercel. Framework preset: **Other**.
 3. `vercel.json` sets `outputDirectory: "public"` so Vercel serves `public/` as the site root —
    no build command is needed.
-4. Once deployed, update the placeholder domain (`https://mukundkt.dev/`) used in
-   `index.html`'s `<link rel="canonical">`, Open Graph/Twitter tags, JSON-LD, and in
-   `robots.txt` / `sitemap.xml`, to the real production URL.
+4. The site's canonical domain is currently set to
+   `https://portfolio-fab7ou69x-code-raiders.vercel.app/` across `index.html`'s
+   `<link rel="canonical">`, Open Graph/Twitter tags, JSON-LD, `robots.txt`, and `sitemap.xml`.
+   If a custom domain or a stable (non-hash) Vercel alias is attached later, update all of those
+   to match — a per-deployment preview URL can change on some redeploys.
 
 ## Known placeholders to finish before going live
 
 - **GitHub**: no public-repo link is wired up yet (professional work is closed-source, per the
   contact section's note). Swap the note for a real link if/when public repos exist.
-- **Canonical domain**: `https://mukundkt.dev/` is a placeholder — replace with the actual Vercel
-  domain (or custom domain) after first deploy, across `index.html`, `robots.txt`, `sitemap.xml`.
 - **Résumé source**: `Mukund_Kumar_Thakur_Resume.pdf` was generated from
   `Mukund_Kumar_Thakur_4Y.docx`. Re-export and replace this file whenever the résumé is updated.
