@@ -191,7 +191,7 @@
     <div class="container hero-grid">
       <div class="hero-copy reveal">
         <div class="hero-identity">
-          <img class="hero-avatar" src="mukund-photo.jpg" alt="Portrait of Mukund Kumar Thakur" width="84" height="84">
+          <img class="hero-avatar" src="mukund-avatar.jpg" alt="Portrait of Mukund Kumar Thakur" width="84" height="84">
           <div>
             <p class="hero-name">Mukund Kumar Thakur</p>
             <p class="hero-role text-mono">Software Engineer · Backend · .NET · Bangalore, India</p>
@@ -258,35 +258,35 @@
       <div class="snapshot-grid">
 
         <div class="metric-card">
-          <button class="metric-info-btn" aria-expanded="false" aria-controls="detail-years">i</button>
+          <button class="metric-info-btn" aria-expanded="false" aria-controls="detail-years" aria-label="More detail about years of software engineering">i</button>
           <div class="metric-value">4+</div>
           <div class="metric-label">Years<br>Software Engineering</div>
           <div class="metric-detail" id="detail-years">Since August 2022 at Enaviya Information Technologies, across three production systems in healthcare, finance, and safety-compliance.</div>
         </div>
 
         <div class="metric-card">
-          <button class="metric-info-btn" aria-expanded="false" aria-controls="detail-services">i</button>
+          <button class="metric-info-btn" aria-expanded="false" aria-controls="detail-services" aria-label="More detail about backend microservices">i</button>
           <div class="metric-value">6+</div>
           <div class="metric-label">Backend<br>Microservices</div>
           <div class="metric-detail" id="detail-services">Inventory, Purchase, OPD, OEM, and supporting services on the healthcare platform — built on ASP.NET Core and C#.</div>
         </div>
 
         <div class="metric-card">
-          <button class="metric-info-btn" aria-expanded="false" aria-controls="detail-api">i</button>
+          <button class="metric-info-btn" aria-expanded="false" aria-controls="detail-api" aria-label="More detail about API response improvement">i</button>
           <div class="metric-value">~35%</div>
           <div class="metric-label">API Response<br>Improvement</div>
           <div class="metric-detail" id="detail-api">From SOLID-driven microservice decomposition on the healthcare platform's highest-traffic endpoints.</div>
         </div>
 
         <div class="metric-card">
-          <button class="metric-info-btn" aria-expanded="false" aria-controls="detail-db">i</button>
+          <button class="metric-info-btn" aria-expanded="false" aria-controls="detail-db" aria-label="More detail about database retrieval improvement">i</button>
           <div class="metric-value">40%+</div>
           <div class="metric-label">Database Retrieval<br>Improvement</div>
           <div class="metric-detail" id="detail-db">Query and stored-procedure optimization via Dapper on high-volume transactional tables.</div>
         </div>
 
         <div class="metric-card">
-          <button class="metric-info-btn" aria-expanded="false" aria-controls="detail-dau">i</button>
+          <button class="metric-info-btn" aria-expanded="false" aria-controls="detail-dau" aria-label="More detail about daily active users">i</button>
           <div class="metric-value">5,000+</div>
           <div class="metric-label">Daily Active<br>Users</div>
           <div class="metric-detail" id="detail-dau">Clinical and administrative users on the healthcare platform's Angular front end.</div>
@@ -407,12 +407,14 @@
                 <div class="project-period">Jan 2024 — Present</div>
                 <p class="project-blurb">A modular backend for hospital operations — inventory, purchasing, outpatient, and equipment tracking — rebuilt as independent microservices behind a shared authentication layer.</p>
               </div>
-              <div class="project-metrics">
-                <div class="project-metric"><div class="val">~35%</div><div class="lbl">faster API</div></div>
-                <div class="project-metric"><div class="val">40%+</div><div class="lbl">faster retrieval</div></div>
-                <div class="project-metric"><div class="val">5,000+</div><div class="lbl">daily users</div></div>
+              <div class="project-summary-side">
+                <div class="project-metrics">
+                  <div class="project-metric"><div class="val">~35%</div><div class="lbl">faster API</div></div>
+                  <div class="project-metric"><div class="val">40%+</div><div class="lbl">faster retrieval</div></div>
+                  <div class="project-metric"><div class="val">5,000+</div><div class="lbl">daily users</div></div>
+                </div>
+                <span class="project-toggle" aria-hidden="true"><svg width="16" height="16"><use href="#icon-plus"/></svg></span>
               </div>
-              <span class="project-toggle" aria-hidden="true"><svg width="16" height="16"><use href="#icon-plus"/></svg></span>
             </summary>
 
             <div class="project-body">
@@ -513,12 +515,14 @@
                 <div class="project-period">Apr 2023 — Dec 2023</div>
                 <p class="project-blurb">An audit and compliance portal with dynamic multi-step workflows and an AI-assisted reporting layer that turns raw audit data into summaries, risk insights, and visual reports.</p>
               </div>
-              <div class="project-metrics">
-                <div class="project-metric"><div class="val">~40%</div><div class="lbl">less manual work</div></div>
-                <div class="project-metric"><div class="val">~25%</div><div class="lbl">more productivity</div></div>
-                <div class="project-metric"><div class="val">10k+</div><div class="lbl">records / report</div></div>
+              <div class="project-summary-side">
+                <div class="project-metrics">
+                  <div class="project-metric"><div class="val">~40%</div><div class="lbl">less manual work</div></div>
+                  <div class="project-metric"><div class="val">~25%</div><div class="lbl">more productivity</div></div>
+                  <div class="project-metric"><div class="val">10k+</div><div class="lbl">records / report</div></div>
+                </div>
+                <span class="project-toggle" aria-hidden="true"><svg width="16" height="16"><use href="#icon-plus"/></svg></span>
               </div>
-              <span class="project-toggle" aria-hidden="true"><svg width="16" height="16"><use href="#icon-plus"/></svg></span>
             </summary>
 
             <div class="project-body">
@@ -788,7 +792,7 @@
         <div class="about-copy">
           <p>I build the backend systems enterprises run their operations on — not prototypes, systems already in front of thousands of daily users that can't afford to be wrong. Most of my work sits at the intersection of <strong>API design</strong>, <strong>database performance</strong>, and <strong>access control</strong>: turning business requirements into services that are fast under real load, secure by default, and structured so another engineer can extend them without unpicking a mess.</p>
           <p>The two domains I've spent the most time in — <strong>healthcare</strong> and <strong>finance</strong> — both have low tolerance for sloppy engineering. Healthcare data access has to be scoped correctly every time; audit and compliance workflows have to produce numbers people are willing to sign off on. That's shaped how I approach new work: authentication and authorization designed in from the start, query performance treated as part of the feature, and enough logging and error handling that production issues are diagnosable instead of mysterious.</p>
-          <p>Day to day that means C# and ASP.NET Core on the backend, SQL Server tuned through Dapper or EF Core depending on what the endpoint needs, Angular where the API needs a front end, and Azure DevOps pipelines carrying it to production inside an Agile team.</p>
+          <p>Day to day that means C# and ASP.NET Core on the backend, SQL Server tuned through Dapper or EF Core depending on what the endpoint needs, Angular where the API needs a front end, and Azure DevOps pipelines carrying it to production inside an Agile team. Increasingly it also means the conversations around that code — with clients on requirements, with the team on who's picking up what — covered in more detail under Leadership.</p>
         </div>
       </div>
 
@@ -800,6 +804,18 @@
           <div class="about-fact"><dt>Domains</dt><dd>Healthcare, Finance, Enterprise applications</dd></div>
           <div class="about-fact"><dt>Education</dt><dd>B.E. Computer Science — VTU, Bangalore (2018–2022)</dd></div>
         </dl>
+        <div class="about-quick-links">
+          <a class="btn btn-secondary" href="Mukund_Kumar_Thakur_Resume.pdf" download>
+            <svg width="16" height="16" aria-hidden="true"><use href="#icon-download"/></svg>
+            <span>Download Resume</span>
+          </a>
+          <a class="contact-link" href="mailto:mukundkt@outlook.com">
+            <svg aria-hidden="true"><use href="#icon-mail"/></svg> mukundkt@outlook.com
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/mukundkt/" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true"><use href="#icon-linkedin"/></svg> linkedin.com/in/mukundkt
+          </a>
+        </div>
       </div>
     </div>
   </section>
